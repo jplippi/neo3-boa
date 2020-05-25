@@ -21,6 +21,7 @@ class TestConstant(BoaTest):
         output = generator.bytecode
 
         self.assertEqual(expected_output, output)
+	self.assertEqual(True, False)
 
     def test_negative_integer_constant(self):
         input = -10
